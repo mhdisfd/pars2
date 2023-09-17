@@ -1,0 +1,984 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap";
+@font-face {
+  font-family: "font-special";
+  src: url("./font/IndustryInc-Base.ttf");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  padding-top: 150px;
+  margin: 0;
+  padding-top: 150px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 5;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+}
+header section {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+header img {
+  max-width: 93px;
+  margin: 20px 0;
+}
+
+.header-headline {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header-headline li {
+  font-family: "Source Sans 3", sans-serif;
+  color: #979797;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin: 5px 5px 0 5px;
+  border: 1px solid;
+  padding: 2.5px 11px;
+  border-radius: 13px;
+  font-size: 15px;
+}
+.header-headline li:hover {
+  background-color: rgba(235, 235, 235, 0.3568627451);
+}
+
+#header-headline-cta {
+  color: #CE2D2E;
+  border-color: #CE2D2E;
+}
+#header-headline-cta:hover {
+  background-color: rgba(255, 36, 36, 0.0549019608);
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(./pic/background2.svg);
+  background-position: 32% 0%;
+  background-repeat: no-repeat;
+}
+
+.campaign-description {
+  display: flex;
+  position: relative;
+}
+
+.campaign-social_media {
+  position: absolute;
+}
+.campaign-social_media p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.campaign-social_media img {
+  margin-right: 35px;
+  transition: 0.3s;
+}
+.campaign-social_media img:hover {
+  transform: scale(1.2);
+}
+
+.campaign-button {
+  position: absolute;
+  right: 0px;
+  top: -75px;
+}
+
+.campaign-picture {
+  margin-top: 105px;
+  margin-left: 135px;
+}
+.campaign-picture img {
+  border-radius: 6px;
+}
+.campaign-picture p {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.campaign-text {
+  margin-top: 63px;
+  margin-left: 39px;
+}
+.campaign-text h1 {
+  font-family: "font-special";
+  font-size: 48px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.campaign-text-p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 1010px;
+}
+
+.campaign-forms {
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.donation-panel {
+  width: 502px;
+  height: 930px;
+  border-radius: 47px;
+  background-color: black;
+}
+.donation-panel .content {
+  width: 411px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.donation-panel h1 {
+  font-family: "font-special";
+  font-size: 24px;
+  font-weight: 400;
+  color: #DADADA;
+  margin-top: 30px;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+.time div p {
+  font-family: "font-special";
+  font-size: 55px;
+  font-weight: 400;
+  color: #F16863;
+  width: 90px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.time div span {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #979797;
+}
+
+.time-line {
+  width: 1px;
+  height: 77px;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.progress-bar p {
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 7px 0 0 10px;
+}
+.progress-bar .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 9px;
+}
+
+.progress-bar-inside {
+  height: 11px;
+  width: 0%;
+  border-radius: 9px;
+  background-color: #F16863;
+  transition: width 0.2s ease-in-out;
+}
+
+.progress-bar-inside--start {
+  width: 60%;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+}
+.amount p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 0 0 5px 10px;
+}
+.amount input {
+  width: calc(100% - 82px);
+  height: 50px;
+  border-radius: 27px 0 0 27px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 20px;
+  color: #979797;
+  outline: none;
+  border: none;
+}
+.amount button {
+  position: absolute;
+  background-color: #fff;
+  color: #CE2D2E;
+  width: 60px;
+  height: 52px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 0 27px 27px 0;
+  top: 33.7px;
+  padding-right: 16px;
+  right: 0px;
+  border: none;
+  bottom: 0;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  align-items: center;
+}
+.checkbox .checkbox-sub {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.all {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 3px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+.all p {
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+}
+.all input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.all input:checked ~ .checkmark {
+  border: 4px solid #F16863;
+}
+.all input:checked ~ .checkmark:after {
+  display: block;
+}
+.all .checkmark:after {
+  top: 5px;
+  left: 4.8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #F16863;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+}
+.email input {
+  width: 392px;
+  height: 53px;
+  border-radius: 27px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 20px;
+  color: #979797;
+  outline: none;
+}
+.email button {
+  margin-top: 30px;
+  width: 100%;
+  height: 72px;
+  border-radius: 36px;
+  background-color: #CE2D2E;
+  color: #fff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.email button:hover {
+  background-color: grey;
+  color: black;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.status .status-line {
+  width: 100%;
+  height: 1px;
+  background-color: #DADADA;
+}
+.status .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.status .text p {
+  margin: 14px 0;
+  display: inline-block;
+}
+
+#add-style {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F16863;
+}
+
+#kyc_button {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 95px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid #979797;
+  color: #979797;
+  background-color: white;
+  transition: 0.4s;
+}
+#kyc_button:hover {
+  color: black;
+  border: 1px solid black;
+}
+
+#audit_button {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
+  color: white;
+  background-color: #CE2D2E;
+  border: none;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+#audit_button:hover {
+  color: #CE2D2E;
+  background-color: white;
+  border: 1px solid #CE2D2E;
+}
+
+.campaign-info {
+  width: 1112px;
+  height: 930px;
+  margin-left: 45px;
+  border-radius: 47px;
+  background-color: rgba(255, 255, 255, 0.7411764706);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.campaign-info label {
+  width: 1027px;
+  margin: 0 auto;
+  position: relative;
+}
+.campaign-info label:nth-child(6) .line-box {
+  margin-top: 40px;
+}
+.campaign-info .title {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 10px 0;
+}
+.campaign-info .input {
+  width: 775px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  font-weight: 400;
+  right: -10px;
+  color: #CE2D2E;
+  text-align: end;
+}
+
+#first-label {
+  margin-top: 50px;
+}
+
+#first-input {
+  text-align: end;
+}
+
+.line-box {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #BCBCBC;
+}
+
+.line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  transition: ease 0.6s;
+}
+
+.input:focus + .line-box .line {
+  width: 100%;
+}
+
+#token-address-input {
+  width: 100%;
+  margin-top: 40px;
+}
+#token-address-input::placeholder {
+  font-size: 20px;
+}
+
+.thankyou {
+  margin-top: 84px;
+  background-image: url(./pic/b.png);
+  height: 355px;
+}
+.thankyou .box {
+  width: 1665px;
+  height: 253px;
+  border-radius: 47px;
+  background-color: rgba(255, 255, 255, 0.38);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box img {
+  max-height: 192px;
+}
+
+.target-progress-bar {
+  margin-top: 60px;
+  width: 1210px;
+}
+.target-progress-bar .text {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.target-progress-bar-container {
+  width: 100%;
+  border-radius: 34px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.target-progress-bar-inside {
+  height: 67px;
+  width: 0%;
+  border-radius: 34px;
+  background-color: #CE2D2E;
+  transition: width 0.2s ease-in-out;
+}
+
+.target-progress-bar-inside--start {
+  width: 75%;
+}
+
+#first-target {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+
+#second-target {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #CE2D2E;
+}
+
+.color-gradient {
+  width: 100%;
+  margin: -250px auto 0 auto;
+  height: 255px;
+  position: relative;
+  z-index: -2;
+  background: linear-gradient(#fff, #ffdacf);
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  grid-template-rows: 336px 190px;
+  margin: 0 auto;
+  background-color: #231F20;
+}
+footer img {
+  margin-top: 75px;
+  margin-left: 160px;
+}
+footer h3 {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+footer p {
+  font-family: "Source Sans 3", sans-serif;
+  margin: 5px 0;
+  font-size: 20px;
+}
+footer .space {
+  padding-top: 75px;
+}
+footer a {
+  color: #979797;
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: #ff9b97;
+  text-decoration: underline;
+}
+
+.footer-up {
+  background-color: black;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  grid-column: span 6;
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer-bottom img {
+  margin: 0 0 20px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.footer-bottom img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (min-width: 450px) {
+  header {
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+  }
+  header section {
+    width: 1546px;
+    justify-content: space-between;
+  }
+  header img {
+    max-width: 162px;
+    margin: 0;
+  }
+  .header-headline {
+    align-items: center;
+  }
+  .header-headline li {
+    margin: 0 10px 0 10px;
+    padding: 5px 25px;
+    font-size: 20px;
+    border-radius: 19px;
+  }
+  #add-text::after {
+    content: "REE IPSUM";
+  }
+  #header-headline-cta::after {
+    content: "CREATE";
+  }
+}
+@media (max-width: 450px) {
+  body {
+    padding-top: 128px;
+  }
+  .container {
+    width: 375px;
+    margin: 0 auto;
+    background-image: url(./pic/background2small.svg);
+    background-repeat: no-repeat;
+  }
+  .campaign-description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .campaign-social_media {
+    position: absolute;
+  }
+  .campaign-social_media p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .campaign-social_media img {
+    margin-right: 20px;
+    max-height: 32px;
+  }
+  .campaign-button {
+    position: absolute;
+    top: -50px;
+  }
+  .campaign-picture {
+    margin: 0 auto;
+  }
+  .campaign-picture img {
+    width: 327px;
+  }
+  .campaign-picture p {
+    display: none;
+  }
+  .campaign-text {
+    margin: 0 auto;
+  }
+  .campaign-text h1 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  .campaign-text-p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 318px;
+  }
+  .campaign-forms {
+    flex-direction: column;
+    margin-top: 140px;
+  }
+  .donation-panel {
+    width: 327px;
+    height: 695px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .donation-panel .content {
+    width: 260px;
+  }
+  .donation-panel h1 {
+    font-size: 15px;
+    color: #979797;
+    margin-top: 30px;
+  }
+  .time-line {
+    width: 1px;
+    height: 51px;
+    margin-top: 15px;
+  }
+  .time div {
+    margin: 0 -7px;
+  }
+  .time div p {
+    font-size: 40px;
+    width: 60px;
+    margin: 0;
+  }
+  .time div span {
+    font-size: 14px;
+  }
+  .progress-bar {
+    margin-top: 50px;
+  }
+  .progress-bar p {
+    font-size: 14px;
+    margin: 5px 0 0 3px;
+  }
+  .progress-bar .text {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress-bar-inside {
+    height: 8px;
+  }
+  .amount {
+    margin-top: 20px;
+  }
+  .amount p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 5px 3px;
+  }
+  .amount input {
+    width: 200px;
+    height: 43px;
+    font-size: 15px;
+    padding-left: 14px;
+    margin-left: -3px;
+  }
+  .amount button {
+    font-size: 15px;
+    top: 26.5px;
+    width: 47px;
+    height: 45px;
+  }
+  .checkbox {
+    margin-top: 5px;
+    align-items: center;
+  }
+  .checkbox .checkbox-sub {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 3px;
+  }
+  .all {
+    padding-left: 40px;
+    margin: 0 15px;
+  }
+  .all p {
+    font-size: 15px;
+  }
+  .all input:checked ~ .checkmark {
+    border: 3px solid #F16863;
+  }
+  .all .checkmark:after {
+    top: 4.5px;
+    left: 4.5px;
+    width: 18px;
+    height: 18px;
+  }
+  .checkmark {
+    height: 27px;
+    width: 27px;
+    border: 3px solid #fff;
+  }
+  .email {
+    margin-top: 10px;
+  }
+  .email input {
+    width: 246px;
+    height: 43px;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  .email button {
+    margin-top: 20px;
+    height: 51px;
+    border-radius: 29px;
+    font-size: 20px;
+  }
+  .status {
+    margin-top: 35px;
+  }
+  .status .text {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .status .text p {
+    margin: 10px 0;
+  }
+  #add-style {
+    font-size: 15px;
+  }
+  #kyc_button {
+    font-size: 15px;
+    width: 84px;
+    height: 30px;
+  }
+  #audit_button {
+    font-size: 15px;
+    width: 111px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  .campaign-info {
+    width: 327px;
+    height: 960px;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 78px;
+  }
+  .campaign-info label {
+    width: 302px;
+  }
+  .campaign-info label:nth-child(5) .line-box {
+    margin-top: 20px;
+  }
+  .campaign-info .title {
+    font-size: 15px;
+    display: block;
+    margin: 20px 0;
+  }
+  .campaign-info .input {
+    width: 302px;
+    font-size: 15px;
+    top: 32px;
+    text-align: left;
+  }
+  #first-label {
+    margin-top: 25px;
+  }
+  #first-input {
+    text-align: left;
+  }
+  .line-box {
+    top: 10px;
+  }
+  #token-address-input {
+    margin-top: 0;
+  }
+  #token-address-input::placeholder {
+    font-size: 15px;
+  }
+  .thankyou {
+    margin-top: 55px;
+    background-image: url(./pic/b.png);
+    height: 355px;
+  }
+  .thankyou .box {
+    width: 327px;
+    height: 277px;
+    border-radius: 30px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box img {
+    max-height: 117px;
+  }
+  .target-progress-bar {
+    margin-top: 20px;
+    width: 296px;
+  }
+  .target-progress-bar .text {
+    margin-top: 15px;
+  }
+  .target-progress-bar-container {
+    width: 100%;
+  }
+  .target-progress-bar-inside {
+    height: 44px;
+  }
+  #first-target {
+    font-size: 15px;
+    margin: 0;
+  }
+  #second-target {
+    font-size: 15px;
+    margin: 0;
+  }
+  .color-gradient {
+    margin: -260px auto 0 auto;
+    height: 260px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 133px;
+    background-color: black;
+  }
+  footer img {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 94px;
+  }
+  footer .space {
+    padding-top: 75px;
+    display: none;
+  }
+  .footer-up {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .footer-bottom {
+    grid-row: 1/2;
+    margin-top: 40px;
+    grid-column: span 1;
+    align-self: auto;
+  }
+  .footer-bottom p {
+    display: none;
+  }
+  .footer-bottom img {
+    margin: 0 20px;
+    max-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=campaign.css.map */

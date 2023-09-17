@@ -1,0 +1,654 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap";
+@font-face {
+  font-family: "font-special";
+  src: url("./font/IndustryInc-Base.ttf");
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  padding-top: 150px;
+  margin: 0;
+  padding-top: 150px;
+}
+
+header {
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+header section {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+header img {
+  max-width: 93px;
+  margin: 20px 0;
+}
+
+.header-headline {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header-headline li {
+  font-family: "Source Sans 3", sans-serif;
+  color: #979797;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  margin: 5px 5px 0 5px;
+  border: 1px solid;
+  padding: 2.5px 11px;
+  border-radius: 13px;
+  font-size: 15px;
+}
+.header-headline li:hover {
+  background-color: rgba(235, 235, 235, 0.3568627451);
+}
+.header-headline a {
+  text-decoration: none;
+}
+
+#header-headline-cta {
+  color: #CE2D2E;
+  border-color: #CE2D2E;
+}
+#header-headline-cta:hover {
+  background-color: rgba(255, 36, 36, 0.0549019608);
+}
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(./pic/Vector.svg);
+  background-position: 32% 12.9%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+main {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 800px;
+}
+
+.main-trending {
+  display: flex;
+  width: 396px;
+  background-color: #fff4f0;
+  justify-content: end;
+  padding-top: 50px;
+}
+.main-trending div {
+  margin-top: 50px;
+  margin-right: 30px;
+}
+.main-trending h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.main-trending ul {
+  list-style: none;
+  padding: 0;
+  color: #CE2D2E;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.main-trending li {
+  margin-top: 18px;
+}
+.main-trending li span {
+  margin-right: 5px;
+  color: black;
+}
+
+.trend-coloumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text {
+  margin-left: 160px;
+  margin-top: 50px;
+  z-index: 5;
+}
+.main-text h1 {
+  font-family: "font-special";
+  margin: 0;
+  font-size: 48px;
+}
+.main-text p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  width: 811px;
+}
+.main-text button {
+  width: 159px;
+  height: 45px;
+  background-color: #CE2D2E;
+  border-radius: 22px;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  border-color: #CE2D2E;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main-text button:hover {
+  background-color: white;
+  color: #CE2D2E;
+  border-color: #CE2D2E;
+}
+
+.second-picture {
+  position: absolute;
+  top: 216px;
+  right: 200px;
+}
+
+.number-counting {
+  margin: 105px auto 0 auto;
+  height: 302px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 47px;
+  background-color: #000000;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+}
+.number-counting div {
+  margin: 82px 84px 0 84px;
+  color: white;
+  font-family: "font-special";
+}
+.number-counting div:not(:first-child)::before {
+  width: 1px;
+  position: absolute;
+  height: 170px;
+  background: white;
+  content: "";
+  margin-left: -87px;
+  margin-top: -10px;
+}
+.number-counting span {
+  font-size: 60px;
+}
+.number-counting p {
+  color: #DADADA;
+  font-size: 24px;
+}
+
+#number-color {
+  color: #F16863;
+}
+
+.fundraisers-search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 818px;
+  margin: 71px auto 0 auto;
+}
+.fundraisers-search img {
+  position: absolute;
+  max-width: 52px;
+  top: 12px;
+  left: -70px;
+}
+.fundraisers-search h2 {
+  font-family: "font-special";
+  margin: 0;
+  font-size: 48px;
+}
+.fundraisers-search p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#search-input {
+  margin-top: 30px;
+  height: 79px;
+  border-radius: 26px;
+  background-color: #F5F5F5;
+  color: #979797;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 65px;
+  border: none;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  background-image: url(./pic/search.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 25px;
+}
+#search-input::placeholder {
+  color: #979797;
+}
+
+.wrapper {
+  height: 590px;
+  width: 1641px;
+  display: flex;
+  margin: 100px auto 0 auto;
+  position: relative;
+}
+.wrapper ion-icon {
+  top: 280px;
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+}
+.wrapper ion-icon:first-child {
+  left: -35px;
+}
+.wrapper ion-icon:last-child {
+  right: -35px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  gap: 2px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  width: 401px;
+  height: 576px;
+  list-style: none;
+  background: #F5F5F5;
+  cursor: pointer;
+  flex-direction: column;
+  display: flex;
+  border-radius: 47px;
+}
+.carousel .card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+}
+.carousel .card p {
+  font-size: 24px;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+}
+.carousel .card span {
+  color: #CE2D2E;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+#card-red {
+  background-color: #FCD3C5;
+}
+#card-red img {
+  max-width: 216px;
+  margin-bottom: 70px;
+}
+
+.card img {
+  max-width: 156px;
+  margin: 60px auto;
+}
+.card div {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.color-gradient {
+  width: 100%;
+  margin: -15px auto 0 auto;
+  height: 95px;
+  position: relative;
+  z-index: -2;
+  background: linear-gradient(white, #ffe5dd);
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(5, 1fr);
+  grid-template-rows: 336px 190px;
+  margin: 0 auto;
+  background-color: #231F20;
+}
+footer img {
+  margin-top: 75px;
+  margin-left: 160px;
+}
+footer h3 {
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+footer p {
+  font-family: "Source Sans 3", sans-serif;
+  margin: 5px 0;
+  font-size: 20px;
+}
+footer .space {
+  padding-top: 75px;
+}
+footer a {
+  color: #979797;
+  text-decoration: none;
+  transition: 0.4s;
+}
+footer a:hover {
+  color: #ff9b97;
+  text-decoration: underline;
+}
+
+.footer-up {
+  background-color: black;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  grid-column: span 6;
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer-bottom img {
+  margin: 0 0 20px 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.footer-bottom img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (min-width: 450px) {
+  header {
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+  }
+  header section {
+    width: 1546px;
+    justify-content: space-between;
+  }
+  header img {
+    max-width: 162px;
+    margin: 0;
+  }
+  .header-headline {
+    align-items: center;
+  }
+  .header-headline li {
+    margin: 0 10px 0 10px;
+    padding: 5px 25px;
+    font-size: 20px;
+    border-radius: 19px;
+  }
+  #add-text::after {
+    content: "REE IPSUM";
+  }
+  #header-headline-cta::after {
+    content: "CREATE";
+  }
+}
+@media (max-width: 450px) {
+  body {
+    padding-top: 175px;
+  }
+  .container {
+    width: 375px;
+    margin: 0 auto;
+    background-image: url(./pic/small-back.svg);
+    background-position: 0 250px;
+  }
+  main {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+  }
+  .main-trending {
+    z-index: 10;
+    position: fixed;
+    top: 125px;
+    flex-direction: column;
+    width: 375px;
+    padding-top: 0;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+  }
+  .main-trending img {
+    content: url(./pic/small-arrow.svg);
+    margin-top: -7px;
+    width: 100%;
+  }
+  .main-trending div {
+    margin: 0;
+  }
+  .main-trending h2 {
+    display: none;
+  }
+  .main-trending ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .main-trending li {
+    flex: 0 0 auto;
+    margin: 4px 5px 10px 5px;
+    display: inline-block;
+  }
+  .main-trending li span {
+    margin-right: 0;
+    color: black;
+  }
+  .main-text {
+    margin: 15px auto 0 auto;
+    z-index: 1;
+  }
+  .main-text h1 {
+    font-family: "font-special";
+    font-size: 32px;
+  }
+  .main-text p {
+    font-size: 15px;
+    font-weight: 400;
+    width: 305px;
+  }
+  .main-text button {
+    width: 111px;
+    height: 31px;
+    border-radius: 22px;
+    font-size: 15px;
+  }
+  .second-picture {
+    top: 176px;
+    right: -30px;
+    width: max-content;
+  }
+  .second-picture img {
+    max-width: 100%;
+    content: url(./pic/ILLUSTRATION-small.png);
+  }
+  .number-counting {
+    margin: 195px auto 0 auto;
+    width: 327px;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+  .number-counting div {
+    margin: 27px 0 25px 55px;
+  }
+  .number-counting div:not(:first-child)::before {
+    width: 161px;
+    height: 1px;
+    margin-left: 0px;
+    margin-top: -28px;
+  }
+  .number-counting span {
+    font-size: 45px;
+  }
+  .number-counting p {
+    font-size: 18px;
+  }
+  .fundraisers-search {
+    width: 327px;
+  }
+  .fundraisers-search img {
+    max-width: 45px;
+    top: -25px;
+    left: 0;
+  }
+  .fundraisers-search h2 {
+    margin-top: 30px;
+    font-size: 32px;
+  }
+  .fundraisers-search p {
+    font-size: 15px;
+  }
+  #search-input {
+    margin-top: 15px;
+    height: 64px;
+    font-size: 15px;
+    padding-left: 65px;
+    background-position: 15px 17px;
+  }
+  .wrapper {
+    height: 410px;
+    width: 298px;
+    margin: 60px auto 0 auto;
+  }
+  .wrapper ion-icon {
+    top: 190px;
+    font-size: 25px;
+  }
+  .wrapper ion-icon:first-child {
+    left: -20px;
+  }
+  .wrapper ion-icon:last-child {
+    right: -20px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+    gap: 2px;
+  }
+  .carousel .card {
+    width: 298px;
+    height: 399px;
+    border-radius: 30px;
+  }
+  .carousel .card h2 {
+    font-size: 15px;
+  }
+  .carousel .card p {
+    font-size: 15px;
+  }
+  .carousel .card span {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  #card-red img {
+    max-width: 216px;
+    margin-bottom: 30px;
+  }
+  .card img {
+    max-width: 140px;
+    margin: 30px auto;
+  }
+  .card div {
+    width: 210px;
+  }
+  .color-gradient {
+    margin: -50px auto 0 auto;
+    height: 80px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 133px;
+    background-color: black;
+  }
+  footer img {
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 94px;
+  }
+  footer .space {
+    padding-top: 75px;
+    display: none;
+  }
+  .footer-up {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  .footer-bottom {
+    grid-row: 1/2;
+    margin-top: 40px;
+    grid-column: span 1;
+    align-self: auto;
+  }
+  .footer-bottom p {
+    display: none;
+  }
+  .footer-bottom img {
+    margin: 0 20px;
+    max-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

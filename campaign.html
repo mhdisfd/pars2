@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/campaign.css">
+    <script src="./assets/campaign.js"></script>
+    <title>DocuCampaign</title>
+</head>
+<body>
+
+    <header>
+        <section>
+            <a href="./index.html"><img src="./assets/pic/Freedom_logo.svg" alt="Freedom_logo"></a>
+            <ul class="header-headline">
+                <a><li id="add-text">F</li></a>
+                <a><li>CONNECT</li></a>
+                <a><li id="header-headline-cta">+</li></a>
+            </ul>
+        </section>
+    </header>
+
+    <section class="container">
+        <div class="campaign-description">
+            <div class="campaign-picture">
+                <img src="./assets/pic/family.png" alt="family">
+                <p>CAMPAIGN LOGO OR IMAGE</p>
+            </div>
+            <div class="campaign-text">
+                <h1>CAMPAIGN TITLE</h1>
+                <p class="campaign-text-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                <p class="campaign-text-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                <div class="campaign-social_media">
+                    <p>SHARE ON SOCIAL</p>
+                    <img src="./assets/pic/Instagram_black.svg" alt="Instagram_black">
+                    <img src="./assets/pic/Twitter_black.svg" alt="Twitter_black">
+                    <img src="./assets/pic/Facebook_black.svg" alt="Facebook_black">
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="campaign-forms">
+            <div class="donation-panel">
+                <div class="content">
+
+                    <h1>STARTS IN</h1>
+
+                    <div class="time">
+                        <div>
+                            <p id="days">00</p>
+                            <span>DAYS</span>
+                        </div>
+                        <span class="time-line" id="time-line1"></span>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>HOURS</span>
+                        </div>
+                        <span class="time-line" id="time-line2"></span>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>MINUTES</span>
+                        </div>
+                        <span class="time-line" id="time-line3"></span>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>SECONDS</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-inside"></div>
+                        </div>
+                        <div class="text">
+                            <p>0 BNB</p>
+                            <p>50 BNB</p>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <label>
+                            <p>AMOUNT</p>
+                            <input type="number" id="max-amount-input" value="" placeholder="76.45324000000"/>
+                            <button id="max-amount-button">MAX</button>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <p class="checkbox-sub">DO YOU WANT A TAX RECEIPT EMAILED TO YOU?</p>
+                        <div>
+                            <label class="all">
+                                <p>YES</p>
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="all">
+                                <p>NO</p>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="EMAIL"/>
+                        <button type="submit">DONATE TO CAMPAIGN</button>
+                    </div>
+                    <div class="status">
+                        <div class="status-line"></div>
+                        <div class="text">
+                            <p>STATUS</p>
+                            <span id="add-style">INCOMING</span>
+                        </div>
+                        <div class="status-line"></div>
+                        <div class="text">
+                            <p>DONATION AMOUNT</p>
+                            <span>N/A</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form class="campaign-info">
+                <div class="campaign-button">
+                    <button type="button" id="kyc_button">KYC</button>
+                    <button type="button" id="audit_button">AUDIT</button>
+                </div>
+                <label id="first-label">
+                    <p class="title">PRESALE ADDRESS</p>
+                    <input type="text" class="input" id="first-input" value="0x476ce325c49a74fedb128da5265fc5b1c8a"/>
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN NAME</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN SYMBOL</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN DECIMALS</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN ADDRESS</p>
+                    <input type="text" class="input" id="token-address-input" placeholder="(Do not send BNB to the token address!)"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOTAL SUPPLY</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN FOR PRESALE</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">TOKEN FOR LIQUIDITY</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">SOFT CAP</p>
+                    <input type="text" class="input" value="0 BNB"/>
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">PRESALE START TIME</p>
+                    <input type="text" class="input" value="1969.12.31 23:00 (UTC)"/>
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">PRESALE END TIME</p>
+                    <input type="text" class="input" value="1969.12.31 23:00 (UTC)"/>
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">LISTING ON</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">LIQUIDITY PERCENT</p>
+                    <input type="text" class="input"/>
+                    <div class="line-box">
+                      <div class="line"></div>
+                    </div>
+                </label>
+                <label>
+                    <p class="title">PRESALE END TIME</p>
+                    <input type="text" class="input" value="0 days after pool ends"/>
+                    <div class="line-box">
+                        <div class="line"></div>
+                    </div>
+                </label>
+            </form>
+        </div>
+
+        <div class="thankyou">
+            <div class="box">
+                <img src="./assets/pic/Thank you.png" alt="thankyou_heart">
+                <div class="target-progress-bar">
+                    <div class="target-progress-bar-container">
+                        <div class="target-progress-bar-inside"></div>
+                    </div>
+                    <div class="text">
+                        <p id="first-target">TARGET: $000,000</p>
+                        <p id="second-target">RAISED: $000,000 (75%)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="color-gradient"></div>
+
+        <footer>
+            <div class="footer-up"><img src="./assets/pic/Frame.svg" alt="frame"></div>
+            <div class="footer-up space">
+                <h3>GET STARTED</h3>
+                <a href=""><p>Accept Crypto Donations</p></a>
+                <a href=""><p>Donate Crypto</p></a>
+            </div>
+            <div class="footer-up space">
+                <h3>SERVICES</h3>
+                <a href=""><p>Services for Nonprofits</p></a>
+                <a href=""><p>Services for Donors</p></a>
+                <a href=""><p>Private Client Services</p></a>
+            </div>
+            <div class="footer-up space">
+                <h3>RESOURCES</h3>
+                <a href=""><p>Resources for Nonprofits</p></a>
+                <a href=""><p>Resources for Donors</p></a>
+                <a href=""><p>Tax Resources</p></a>
+                <a href=""><p>Learn: Cryptocurrency</p></a>
+                <a href=""><p>FAQ</p></a>
+            </div>
+            <div class="footer-up space">
+                <h3>PARTNERSHIPS</h3>
+                <a href=""><p>Crypto Industry Partners</p></a>
+                <a href=""><p>Media Partners</p></a>
+                <a href=""><p>Nonprofit Industry Partners</p></a>
+                <a href=""><p>Partner with Us</p></a>
+            </div>
+            <div class="footer-up space">
+                <h3>ABOUT</h3>
+                <a href=""><p>Testimonials</p></a>
+                <a href=""><p>Updates</p></a>
+                <a href=""><p>Events</p></a>
+                <a href=""><p>Contact</p></a>
+                <a href=""><p>Careers</p></a>
+            </div>
+            <div class="footer-bottom">
+                <img src="./assets/pic/Instagram.svg" alt="Instagram">
+                <img src="./assets/pic/Twitter.svg" alt="Twitter">
+                <img src="./assets/pic/Facebook.svg" alt="Facebook">
+                <a href=""><p>Terms of Use | Privacy Policy</p></a>
+            </div>
+        </footer>
+
+
+    </section>
+
+    
+</body>
+</html>
